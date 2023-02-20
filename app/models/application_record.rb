@@ -1,3 +1,3 @@
-class ApplicationRecord < ActiveRecord::Base
-  primary_abstract_class
+class ApplicationController < ActionController::Base
+  protect_from_forgery with: :exception
 end
